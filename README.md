@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Community-Driven Waste Segregation Reporting System
 
-## Getting Started
+## 📌 Project Overview
+The **Community-Driven Waste Segregation Reporting System** is a cloud-native web application designed to improve waste segregation at the source. It enables collaboration between households, waste collectors, and municipal authorities through real-time reporting, analytics, and community visibility.
 
-First, run the development server:
+This repository contains the **High-Level Design (HLD)** and architectural planning for **Sprint #1**, built using **Next.js (TypeScript)** and deployed on **AWS**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Problem Statement
+Municipal waste management systems struggle to enforce and monitor waste segregation due to:
+- Lack of real-time data  
+- Low citizen engagement  
+- Weak accountability mechanisms  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This leads to mixed waste collection, inefficient recycling, and increased landfill usage.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Project Goal
+To design a **community-driven digital platform** that:
+- Tracks waste segregation at the source  
+- Encourages positive behavior through visibility and feedback  
+- Provides actionable insights to municipal authorities  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧱 High-Level Architecture (Sprint #1)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The system follows a **layered cloud-native architecture**:
 
-## Deploy on Vercel
+### Frontend (UI Layer)
+- Next.js (TypeScript)
+- App Router
+- Server & Client Components
+- Tailwind CSS
+- Role-based UI (Citizen, Collector, Admin)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Backend (API & Business Logic)
+- Next.js API Routes
+- Server Actions
+- Authentication & authorization
+- Business logic and data processing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Database Layer
+- PostgreSQL
+- Prisma ORM
+- Conceptual entities:
+  - User
+  - Household
+  - WasteReport
+  - Community
+  - Role
+
+### Caching Layer
+- Redis
+- Cached data:
+  - Community scores
+  - Dashboard analytics
+  - Session data
+
+### Cloud Infrastructure
+- AWS
+  - EC2 / App Runner (hosting)
+  - RDS (PostgreSQL)
+  - ElastiCache (Redis)
+  - S3 (object storage)
+- Docker (containerization)
+- GitHub Actions (CI/CD)
+
+---
+
+## 🔄 Data Flow (High-Level)
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend**
+- Next.js (TypeScript)
+- Tailwind CSS
+
+**Backend**
+- Next.js API Routes
+- Server Actions
+
+**Database**
+- PostgreSQL
+- Prisma ORM
+
+**Caching**
+- Redis
+
+**DevOps**
+- Docker
+- GitHub Actions
+
+**Cloud**
+- AWS (EC2/App Runner, RDS, S3, ElastiCache)
+
+---
+
+## 👥 Team Members & Roles
+
+| Name | Role | Responsibilities |
+|---|---|---|
+| Sharon Emmanuel S.R | Project Manager & UI/UX Designer | Sprint planning, wireframes, user flows, usability testing, documentation |
+| Mudu Tejal Nayak | Frontend Developer | UI development, dashboard implementation, frontend integration |
+| Sarvesh Bhoopathi Ramana | Backend Developer & QA Lead | API design, database schema, testing, quality assurance |
+
+---
+
+## 📁 Repository Structure (Planned)
