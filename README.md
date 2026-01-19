@@ -3,8 +3,6 @@
 ## 📌 Project Overview
 The **Community-Driven Waste Segregation Reporting System** is a cloud-native web application designed to improve waste segregation at the source. It enables collaboration between households, waste collectors, and municipal authorities through real-time reporting, analytics, and community visibility.
 
-This repository contains the **High-Level Design (HLD)** and architectural planning for **Sprint #1**, built using **Next.js (TypeScript)** and deployed on **AWS**.
-
 ---
 
 ## 🎯 Problem Statement
@@ -109,5 +107,3 @@ The system follows a **layered cloud-native architecture**:
 | Sarvesh Bhoopathi Ramana | Backend Developer & QA Lead | API design, database schema, testing, quality assurance |
 
 ---
-
-## 📁 Repository Structure (Planned)
