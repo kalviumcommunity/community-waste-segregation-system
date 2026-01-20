@@ -1,130 +1,109 @@
-Project Name
+# Community-Driven Waste Segregation Reporting System
 
-Community-Driven Waste Segregation Reporting System
+## 📌 Project Overview
+The **Community-Driven Waste Segregation Reporting System** is a cloud-native web application designed to improve waste segregation at the source. It enables collaboration between households, waste collectors, and municipal authorities through real-time reporting, analytics, and community visibility.
 
-Project Goal
+---
 
-To build a community-driven digital platform that tracks waste segregation practices, encourages positive behavior, and provides actionable insights to municipal authorities.
+## 🎯 Problem Statement
+Municipal waste management systems struggle to enforce and monitor waste segregation due to:
+- Lack of real-time data  
+- Low citizen engagement  
+- Weak accountability mechanisms  
 
-Problem Overview
+This leads to mixed waste collection, inefficient recycling, and increased landfill usage.
 
-The Community-Driven Waste Segregation Reporting System is a web-based application designed to improve waste segregation at the source by enabling collaboration between:
+---
 
-Households
+## 🚀 Project Goal
+To design a **community-driven digital platform** that:
+- Tracks waste segregation at the source  
+- Encourages positive behavior through visibility and feedback  
+- Provides actionable insights to municipal authorities  
 
-Waste Collectors
+---
 
-Municipal Authorities
+## 🧱 High-Level Architecture (Sprint #1)
 
-The system focuses on:
+The system follows a **layered cloud-native architecture**:
 
-Real-time reporting
+### Frontend (UI Layer)
+- Next.js (TypeScript)
+- App Router
+- Server & Client Components
+- Tailwind CSS
+- Role-based UI (Citizen, Collector, Admin)
 
-Community visibility
+### Backend (API & Business Logic)
+- Next.js API Routes
+- Server Actions
+- Authentication & authorization
+- Business logic and data processing
 
-Data-driven decision-making
+### Database Layer
+- PostgreSQL
+- Prisma ORM
+- Conceptual entities:
+  - User
+  - Household
+  - WasteReport
+  - Community
+  - Role
 
-The ultimate objective is to reduce mixed waste and lower landfill burden.
+### Caching Layer
+- Redis
+- Cached data:
+  - Community scores
+  - Dashboard analytics
+  - Session data
 
-Proposed Solution
+### Cloud Infrastructure
+- AWS
+  - EC2 / App Runner (hosting)
+  - RDS (PostgreSQL)
+  - ElastiCache (Redis)
+  - S3 (object storage)
+- Docker (containerization)
+- GitHub Actions (CI/CD)
 
-A lightweight, offline-first web application that educates users on waste segregation and tracks progress even without internet connectivity. Data can be synced manually when connectivity is restored.
+---
 
-Key Features
+## 🔄 Data Flow (High-Level)
 
-Offline-accessible lessons (text and images)
+---
 
-Offline quizzes and practice questions
+## 🛠️ Technology Stack
 
-Local progress tracking
+**Frontend**
+- Next.js (TypeScript)
+- Tailwind CSS
 
-Installable Progressive Web App (PWA)
+**Backend**
+- Next.js API Routes
+- Server Actions
 
-Manual data sync when internet is available
+**Database**
+- PostgreSQL
+- Prisma ORM
 
-Technologies Used
-Frontend
+**Caching**
+- Redis
 
-Next.js
+**DevOps**
+- Docker
+- GitHub Actions
 
-HTML
+**Cloud**
+- AWS (EC2/App Runner, RDS, S3, ElastiCache)
 
-CSS
+---
 
-Offline Support
+## 👥 Team Members & Roles
 
-Service Workers
+| Name | Role | Responsibilities |
+|---|---|---|
+| Sharon Emmanuel S.R | Project Manager & UI/UX Designer | Sprint planning, wireframes, user flows, usability testing, documentation |
+| Mudu Tejal Nayak | Frontend Developer | UI development, dashboard implementation, frontend integration |
+| Sarvesh Bhoopathi Ramana | Backend Developer & QA Lead | API design, database schema, testing, quality assurance |
 
-IndexedDB / localStorage
-
-Backend (Optional)
-
-Node.js
-
-Express.js
-
-Deployment
-
-Frontend: Netlify / Vercel
-
-Backend: Render
-
-Team Roles & Responsibilities
-Name	Role	Responsibilities
-Sharon Emmanuel S.R	Project Manager & UI/UX Designer	Sprint planning, wireframes, user flows, usability testing, documentation, bug tracking
-Mudu Tejal Nayak	Frontend Developer	UI development, dashboard implementation, frontend integration
-Sarvesh Bhoopathi Ramana	Backend Developer & QA Lead	API development, database design, testing, quality assurance
-Sprint Timeline (4 Weeks)
-Week 1
-
-Planning
-
-UI/UX design
-
-Project setup
-
-Week 2
-
-Core development
-
-Lessons module
-
-Quizzes module
-
-Local storage implementation
-
-Week 3
-
-Offline caching
-
-Frontend–backend integration
-
-Testing
-
-Week 4
-
-Final testing
-
-Deployment
-
-Documentation
-
-MVP (Minimum Viable Product)
-
-Lessons accessible without internet
-
-Quizzes usable offline
-
-Progress saved locally
-
-Installable web app (PWA)
-
-Success Metrics
-
-MVP completed within 4 weeks
-
-All core features work offline
-
-Successful demo without internet
-
-Positive mentor or reviewer feedback
+---
