@@ -44,3 +44,15 @@ export async function POST(req: Request) {
     );
   }
 }
+
+
+
+export async function GET() {
+return NextResponse.json({ message: "List users" });
+}
+
+
+export async function POST() {
+return NextResponse.json({ message: "Create user" });
+}
+ 
