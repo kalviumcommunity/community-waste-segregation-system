@@ -1,0 +1,16 @@
+
+> community-waste-segregation-system@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1984ms
+ ✓ Compiled /src/middleware in 101ms (72 modules)
+ ✓ Compiled /api/users in 67ms (58 modules)
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`role`, `main`.`User`.`createdAt` FROM `main`.`User` WHERE 1=1 LIMIT ? OFFSET ?
+ GET /api/users 200 in 143ms
+ ✓ Compiled in 27ms
+^C^C
