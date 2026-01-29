@@ -18,11 +18,15 @@
         "./src/*"
       ]
     },
-    "types": ["node"],
     "plugins": [
       {
         "name": "next"
       }
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
     ]
   },
   "include": [

@@ -1,9 +1,5 @@
-model User {
-id String @id @default(uuid())
-name String
-email String @unique
-role Role @default(USER)
-createdAt DateTime @default(now())
+generator client {
+  provider = "prisma-client-js"
 }
 
 datasource db {
@@ -15,18 +11,6 @@ model User {
   id        String   @id @default(uuid())
   name      String
   email     String   @unique
-  role      Role     @default(CITIZEN)
+  role      String   @default("CITIZEN")
   createdAt DateTime @default(now())
-}
-
-enum Role {
-  CITIZEN
-  COLLECTOR
-  ADMIN
-}
-
-enum Role {
-USER
-COLLECTOR
-ADMIN
 }
