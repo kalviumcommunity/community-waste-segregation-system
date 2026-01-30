@@ -1,3 +1,3 @@
-import { defineConfig } from "prisma/config";
-
-export default defineConfig({});
+export const prismaConfig = {
+  seed: "ts-node-esm prisma/seed.ts",
+};
