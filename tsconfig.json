@@ -13,9 +13,10 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+    "baseUrl": "src",
     "paths": {
       "@/*": [
-        "./src/*"
+        "*"
       ]
     },
     "plugins": [
@@ -36,6 +37,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
+    "src/lib/apiResponse.ts"
   ],
   "exclude": [
     "node_modules"
