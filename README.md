@@ -12,6 +12,7 @@ The Community-Driven Waste Segregation Reporting System is a web-based applicati
 
 Households
 
+
 Waste Collectors
 
 Municipal Authorities
