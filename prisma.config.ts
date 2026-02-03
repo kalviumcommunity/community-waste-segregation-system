@@ -1,3 +1,5 @@
-export const prismaConfig = {
-  seed: "ts-node-esm prisma/seed.ts",
-};
+import { defineConfig } from "prisma/config";
+
+export default defineConfig({
+  schema: "prisma/schema.prisma",
+});
