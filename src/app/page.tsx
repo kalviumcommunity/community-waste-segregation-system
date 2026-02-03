@@ -1,20 +1,6 @@
-export default function LoginPage() {
-
-import EmailForm from "../component/EmailForm";
-
-export default function HomePage() {
-  return (
-    <main className="p-4">
-      <h1 className="text-2xl font-bold mb-4">
-        Community-Driven Waste Segregation Reporting System
-      </h1>
-
-      {/* Email testing form */}
-      <EmailForm />
 import Link from "next/link";
 
-export default function Home() {
-
+export default function LoginPage() {
   return (
     <main style={{ padding: 24 }}>
       <h1>Login</h1>
@@ -33,6 +19,10 @@ export default function Home() {
 
         <button type="submit">Login</button>
       </form>
+
+      <p style={{ marginTop: 16 }}>
+        Don’t have an account? <Link href="/register">Register</Link>
+      </p>
     </main>
   );
 }

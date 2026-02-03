@@ -1,22 +1,26 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
     "target": "ES2020",
-    "esModuleInterop": true,
+    "module": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx",
     "strict": true,
     "skipLibCheck": true,
-    "allowJs": false,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "esModuleInterop": true,
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true,
     "incremental": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "*"
+        "src/*"
       ]
     },
     "plugins": [
@@ -24,20 +28,14 @@
         "name": "next"
       }
     ],
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ]
+    "allowJs": true
   },
   "include": [
-    "prisma/**/*.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "src/lib/apiResponse.ts"
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
